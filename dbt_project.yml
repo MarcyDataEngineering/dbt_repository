@@ -32,9 +32,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  staging:
-    # Applies to all files under models/staging/
-      materialized: view
-  intermediate:
-    # Applies to all files under models/staging/
-      materialized: view
+  marts:
+    +materialized: table

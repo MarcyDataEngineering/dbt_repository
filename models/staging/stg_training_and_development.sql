@@ -9,7 +9,6 @@ source as (
 renamed as (
 
     select
-        _row,
         training_outcome,
         training_duration_days_,
         training_date,
@@ -18,8 +17,7 @@ renamed as (
         trainer,
         training_program_name,
         training_type,
-        location,
-        _fivetran_synced
+        location
 
     from source
 

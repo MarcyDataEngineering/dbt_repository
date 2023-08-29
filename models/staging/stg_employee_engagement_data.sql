@@ -9,13 +9,11 @@ source as (
 renamed as (
 
     select
-        _row,
         engagement_score,
         satisfaction_score,
         work_life_balance_score,
-        employee_id,
-        survey_date,
-        _fivetran_synced
+        employee_id AS EmployeeId,
+        survey_date
 
     from source
 
