@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: employee_raw
+    database: fivetran_database
+    schema: employee_raw  
+    tables:
+      - name: employee_data
+        description: >
+          All employees data, past and present. Includes supervisors as workers.
+      - name: employee_engagement_data
+        description: >
+          One record per employee.
+      - name: recruitment_data
+        description: >
+          All recruitment data, accepted and terminated.
+      - name: training_and_development
+        description: >
+          Training data for employees.
